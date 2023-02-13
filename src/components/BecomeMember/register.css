@@ -1,0 +1,51 @@
+.register-page-main{
+    color: white;
+    height: 100vh;
+}
+
+.register-page-form{
+    padding: 3rem 0 1rem 0;
+    width: 70%;
+    margin: auto;
+}
+
+
+.registerForm1{
+    padding: 0 2rem 0 6rem;
+}
+
+.submit-button{
+    margin-top: 2rem;
+    transition:transform 0.5s;
+    transform: scale(0.9);
+    background-color: #050d25;
+}
+.submit-button:hover{
+    transform: scale(1.1);
+    background-color: darkslateblue;
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .register-page-main {
+        padding: 20px;
+    }
+
+    .register-page-form {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .register-page-form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .register-page-form {
+        width: 60%;
+    }
+}
+

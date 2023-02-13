@@ -1,0 +1,86 @@
+.adminActivities-page-main{
+    color: white;
+    height: 100vh;
+    padding: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminActivities-row1{
+    padding-top: 1rem;
+    color: black;
+}
+
+.adminActivity{
+    padding: 2rem 5rem 3rem 5rem;
+}
+
+.adminCard1, .adminCard2{
+    background-color: antiquewhite;
+}
+
+.adminCard1{
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.adminCard1:hover{
+    transform: scale(1);
+}
+
+.btn-edit{
+    margin-bottom: 1rem;
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.btn-edit:hover{
+    transform: scale(1);
+}
+
+.btn-delete{
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.btn-delete:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1);
+}
+
+.btn-open{
+    margin-bottom: 1rem;
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.btn-open:hover{
+    background-color: #050d25;
+    color: white;
+    transform: scale(1);
+}
+
+@media (max-width: 800px) {
+    .adminActivity{
+        width: 100%;
+    }
+
+    .adminActivities-page-main{
+        padding: 24px;
+
+    }
+
+    .adminActivities-row1{
+        padding-top: 0;
+        color: black;
+    }
+
+    .adminActivity{
+        padding: 0;
+    }
+
+}
+
+

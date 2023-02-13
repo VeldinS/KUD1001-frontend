@@ -1,0 +1,35 @@
+.allNotificationsCard {
+    transition: transform 0.5s;
+    transform: scale(0.9);
+}
+
+.notifications-page-heading1{
+    font-weight: 600;
+    font-family: "Copperplate Gothic Bold";
+    letter-spacing: 10px;
+    padding-bottom: 3rem;
+    color: white;
+}
+.allNotifications-page-main{
+    padding: 54px;
+    color: black;
+}
+
+.allNotificationsCard:hover{
+    transform: scale(1);
+}
+@media only screen and (max-width: 767px) {
+    .notifications-page-heading1{
+        font-weight: 600;
+        font-family: "Copperplate Gothic Bold";
+        letter-spacing: 3px;
+        padding: 0;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .allNotifications-page-main{
+        padding: 24px;
+        width: 100%;
+    }
+}

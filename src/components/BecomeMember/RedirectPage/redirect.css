@@ -1,0 +1,25 @@
+body {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.redirect-page-main {
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.redirect1 {
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .redirect-page-main {
+        height: auto;
+        min-height: 100vh;
+    }
+}

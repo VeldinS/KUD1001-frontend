@@ -1,0 +1,47 @@
+.checkMemberships-page-main{
+    color: white;
+    height: 100vh;
+    padding: 54px;
+}
+
+.membership{
+    padding: 2rem 5rem 3rem 5rem;
+}
+
+.checkMemberships-row1{
+    padding-top: 1rem;
+    color: black;
+}
+
+.checkMemberships-card1{
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.checkMemberships-card1:hover {
+    transform: scale(1);
+}
+
+.checkMemberships-card1{
+    background-color: antiquewhite;
+}
+
+@media (max-width: 800px) {
+
+    .checkMemberships-page-main{
+        color: white;
+        height: 100vh;
+        padding: 14px;
+
+    }
+
+    .membership{
+        padding: 1rem;
+    }
+
+    .checkMemberships-row1{
+        padding-top: 1rem;
+        color: black;
+    }
+
+}

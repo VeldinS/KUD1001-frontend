@@ -1,0 +1,56 @@
+.login-page-main{
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 54px;
+}
+
+.login-page-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    width: 32rem;
+    background-color: #2a2a35;
+    opacity: 0.8;
+}
+
+.login-form{
+    padding: 1rem 0 1rem 0;
+}
+
+.login-form1{
+    padding: 0 2rem 0 2rem;
+}
+
+.login-button{
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.login-button:hover{
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 576px) {
+    .login-page-main {
+        height: auto;
+        padding: 24px;
+    }
+
+    .login-page-form {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+

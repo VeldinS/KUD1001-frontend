@@ -1,0 +1,48 @@
+.editNotification-page-main{
+    padding: 54px;
+}
+
+.editNotification-form{
+    width: 90%;
+    color: white;
+}
+
+.editNotification-form1{
+    padding: 0 2rem 0 2rem;
+    color: white;
+}
+
+.editNotification-form2{
+    height: 150px;
+}
+
+.editNotification-form3{
+    padding: 2rem;
+}
+
+.edit-form-btn{
+    padding: 0 2rem 0 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    .editNotification-page-main{
+        padding: 24px;
+    }
+
+    .editNotification-form{
+        padding: 0;
+        color: white;
+        width: 100%;
+    }
+
+    .editNotification-form1{
+        padding: 0;
+        color: white;
+    }
+
+    .editNotification-form2{
+        height: 150px;
+    }
+
+}

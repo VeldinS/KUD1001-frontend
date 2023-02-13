@@ -1,0 +1,41 @@
+.deleteActivity-page-main{
+    color: white;
+    height: 100vh;
+    padding: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteActivity-form{
+    width: 100%;
+    color: white;
+}
+
+
+.delete-header{
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.delete-form{
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .delete-form {
+        width: 100%;
+    }
+
+    .deleteActivity-page-main{
+        padding: 14px;
+
+    }
+
+}

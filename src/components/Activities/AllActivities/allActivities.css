@@ -1,0 +1,106 @@
+.activities-page-heading1{
+    font-weight: 600;
+    font-family: "Copperplate Gothic Bold";
+    letter-spacing: 10px;
+    padding-bottom: 3rem;
+}
+
+.activities-page-main{
+    color: white;
+    height: 100vh;
+}
+
+.activities-row1{
+    padding-top: 1rem;
+    color: black;
+}
+
+.activity{
+    padding: 2rem 5rem 3rem 5rem;
+}
+
+.card1, .card2{
+    background-color: antiquewhite;
+}
+
+.card1{
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.card1:hover{
+    transform: scale(1);
+}
+
+.allActivities-button{
+    transition:transform 0.5s;
+    transform: scale(0.8);
+}
+
+.allActivities-button:hover{
+    background-color: darkslateblue;
+    transform: scale(1);
+}
+
+@media (max-width:1274px) {
+    .activities-page-heading1{
+        font-weight: 600;
+        font-family: "Copperplate Gothic Bold";
+        letter-spacing: 2px;
+        padding: 0;
+    }
+
+    .activity {
+        width: 100%;
+        padding: 0;
+    }
+    .card1 {
+        height: max-content;
+        width: 100%;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .activities-page-heading1 {
+        font-size: 24px;
+    }
+
+    .activities-page-main{
+        width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
+    .activities-page-heading1{
+        font-weight: 600;
+        font-family: "Copperplate Gothic Bold";
+        letter-spacing: 2px;
+        padding: 0;
+    }
+
+    .activity {
+        width: 100%;
+        padding: 0;
+    }
+    .card1 {
+        height: max-content;
+        width: 100%;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .activities-page-heading1 {
+        font-size: 24px;
+    }
+
+    .activities-page-main{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+.adminNotifications-page-main{
+    padding: 54px;
+    color: black;
+    height: 100vh;
+}
+
+.adminNotifications-row1{
+    margin-bottom: 2rem;
+}
+
+.notCard{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.allNotifications-button{
+    margin-right: 0;
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.allNotifications-button:hover{
+    transform: scale(1);
+}
+
+.adminNotificationCard1{
+    background-color: antiquewhite;
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.adminNotificationCard1:hover{
+    transform: scale(1);
+}
+
+.btn-edit{
+    margin-bottom: 1rem;
+}
+
+.btn-delete:hover{
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-width: 1210px) {
+    .adminNotifications-page-main{
+        padding: 24px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .adminNotifications-row1{
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}
+
+
+

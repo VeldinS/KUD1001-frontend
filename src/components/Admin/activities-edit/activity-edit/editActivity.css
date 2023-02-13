@@ -1,0 +1,48 @@
+.editActivity-page-main{
+    padding: 54px;
+}
+
+.editActivity-form{
+    width: 90%;
+    color: white;
+}
+
+.editActivity-form1{
+    padding: 0 2rem 0 2rem;
+    color: white;
+}
+
+.editActivity-form2{
+    height: 150px;
+}
+
+.editActivity-form3{
+    padding: 2rem;
+}
+
+.edit-form-btn{
+    padding: 0 2rem 0 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    .editActivity-page-main{
+        padding: 14px;
+    }
+
+    .editActivity-form{
+        padding: 0;
+        color: white;
+        width: 90%;
+    }
+
+    .editActivity-form1{
+        padding: 0;
+        color: white;
+    }
+
+    .editActivity-form2{
+        height: 150px;
+    }
+
+}

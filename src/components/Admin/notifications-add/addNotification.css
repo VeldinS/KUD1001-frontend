@@ -1,0 +1,58 @@
+.addNotification-page-main{
+    color: white;
+    height: 100vh;
+    padding: 54px;
+}
+
+.addNotification-form{
+    width: 100%;
+    color: white;
+}
+
+.addNotification-form1{
+    padding: 0 7rem 0 7rem;
+    color: white;
+}
+
+.addNotification-form2{
+    height: 150px;
+}
+
+.addNotification-form3{
+    padding: 4rem;
+}
+
+.form-btn{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.previewImg{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+@media (max-width: 779px) {
+
+    .addNotification-page-main{
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .addNotification-form{
+        padding: 0;
+        color: white;
+        width: 100%;
+    }
+
+    .addNotification-form1{
+        padding: 0;
+        color: white;
+    }
+
+    .addNotification-form2{
+        height: 150px;
+    }
+
+}
