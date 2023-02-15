@@ -17,6 +17,22 @@
     opacity: 0.8;
 }
 
+.login-page-form{
+    animation-name: enter-login-page-form;
+    animation-duration: 1s;
+}
+
+@keyframes enter-login-page-form{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .login-form{
     padding: 1rem 0 1rem 0;
 }

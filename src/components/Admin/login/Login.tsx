@@ -35,7 +35,7 @@ const Login: React.FC = () => {
         event.preventDefault();
         const adminCredentials = {...formData};
         try {
-            const res = await fetch('http://localhost:5000/Login', {
+            const res = await fetch( process.env.REACT_APP_BACKEND_URL + '/Login', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -7,6 +7,22 @@
     color: white;
 }
 
+.editActivity-form{
+    animation-name: enter-editActivity-form;
+    animation-duration: 1s;
+}
+
+@keyframes enter-editActivity-form{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .editActivity-form1{
     padding: 0 2rem 0 2rem;
     color: white;

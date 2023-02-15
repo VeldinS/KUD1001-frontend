@@ -5,7 +5,7 @@ import { setRegistrationData } from "./registrationActions";
 function* fetchRegistrations() {
     try {
         // @ts-ignore
-        const response = yield call(fetch, "http://localhost:5000/Admin/Control-panel/Memberships");
+        const response = yield call(fetch, process.env.REACT_APP_BACKEND_URL + "/Admin/Control-panel/Memberships");
         // @ts-ignore
         const data = yield response.json();
         yield put(setRegistrationData(data));

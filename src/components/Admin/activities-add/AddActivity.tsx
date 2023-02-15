@@ -50,7 +50,7 @@ const AddActivity: React.FC = () => {
                 image1: image1Path,
                 image2: image2Path
             }
-            const response = await axios.post('http://localhost:5000/Admin/Control-panel/Activities/Add', newActivity, {
+            const response = await axios.post(process.env.REACT_APP_BACKEND_URL + '/Admin/Control-panel/Activities/Add', newActivity, {
                 headers: {
                     'Content-Type': 'application/json',
                 }
@@ -93,7 +93,7 @@ const AddActivity: React.FC = () => {
                 <Content style={{ margin: '0 0' }}>
                     <div className={"addActivity-page-main"} style={{ minHeight: '100vh', backgroundImage:  `linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url(${image1})`, backgroundSize: "cover", height: 'max-content'}}>
                         <div className={"row"}>
-                            <div className={"col-8"}>
+                            <div className={"col-8 form-pt-1"}>
                                 <form onSubmit={handleSubmit} className={"text-center addActivity-form"}>
                                     <div className="mb-3 addActivity-form1">
                                         <label htmlFor="exampleInputEmail1" className="form-label">NAZIV AKTIVNOSTI</label>
@@ -113,7 +113,7 @@ const AddActivity: React.FC = () => {
                                     </div>
                                 </form>
                             </div>
-                            <div className={"col-4"}>
+                            <div className={"col-4 form-pt-2"}>
                                 <form onSubmit={handleSubmit} >
                                     <div className="mb-3 addActivity-form1 addActivity-form3">
                                         <label htmlFor="date-input" className="form-label">DATUM</label>

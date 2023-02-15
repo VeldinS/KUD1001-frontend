@@ -34,7 +34,7 @@ const AddNotification: React.FC = () => {
                 name: formData.name,
                 text: formData.text
             }
-            const response = await axios.post('http://localhost:5000/Admin/Control-panel/Notifications/Add', newNotification, {
+            const response = await axios.post(process.env.REACT_APP_BACKEND_URL + '/Admin/Control-panel/Notifications/Add', newNotification, {
                 headers: {
                     'Content-Type': 'application/json',
                 }

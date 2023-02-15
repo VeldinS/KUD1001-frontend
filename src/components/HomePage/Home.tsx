@@ -56,8 +56,8 @@ const Home: React.FC = () => {
             <Layout className="site-layout">
                     <Content style={{ margin: '0 0' }}>
                     <div className={"home-page-main"} style={{ padding: 54, minHeight: '100vh', backgroundImage:  `linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(${image1})`, backgroundSize: "cover", height: 'max-content'}}>
-                        <h1 className={"text-center home-page-heading1"}>KUD "1001 noć" FOJNICA</h1>
-                            <blockquote className="blockquote">
+                        <h1 className={"text-center home-page-heading1 animated"}>KUD "1001 noć" FOJNICA</h1>
+                            <blockquote className="blockquote home-page-quote animated">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                             </blockquote>
                     </div>

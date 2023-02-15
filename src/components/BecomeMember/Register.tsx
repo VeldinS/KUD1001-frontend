@@ -38,7 +38,7 @@ const Register: React.FC = () => {
     }, handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const newPerson = {...formData};
-        await fetch('http://localhost:5000/Register', {
+        await fetch(process.env.REACT_APP_BACKEND_URL + '/Register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

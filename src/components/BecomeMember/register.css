@@ -9,6 +9,21 @@
     margin: auto;
 }
 
+.register-page-form{
+    animation-name: enter-register-page-form;
+    animation-duration: 1s;
+}
+
+@keyframes enter-register-page-form{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .registerForm1{
     padding: 0 2rem 0 6rem;

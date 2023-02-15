@@ -6,7 +6,7 @@ import { setActivityData } from "./activityActions";
 function* fetchActivities() {
     try {
         // @ts-ignore
-        const response = yield call(fetch, "http://localhost:5000/Activities/All");
+        const response = yield call(fetch, process.env.REACT_APP_BACKEND_URL + "/Activities/All");
         // @ts-ignore
         const data = yield response.json();
         yield put(setActivityData(data));

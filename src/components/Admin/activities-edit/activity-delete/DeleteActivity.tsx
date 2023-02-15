@@ -24,7 +24,7 @@ const DeleteActivity: React.FC = () => {
         navigate('/Login');
     }, {activityId} = useParams(), handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const response = await axios.delete(`http://localhost:5000/Admin/Control-panel/Activities/Delete/${activityId}`);
+        const response = await axios.delete(process.env.REACT_APP_BACKEND_URL + `/Admin/Control-panel/Activities/Delete/${activityId}`);
         alert('AKTIVNOST USPJEŠNO IZBRISANA!')
         navigate('/Admin/Control-panel/Activities/Select');
     };

@@ -43,7 +43,7 @@ const EditNotification: React.FC = () => {
             name: notificationData.name,
             text: notificationData.text,
         }
-        const response = await axios.patch(`http://localhost:5000/Admin/Control-panel/Notifications/Edit/${notificationId}`, newNotification, {
+        const response = await axios.patch(process.env.REACT_APP_BACKEND_URL + `/Admin/Control-panel/Notifications/Edit/${notificationId}`, newNotification, {
             headers: {
                 'Content-Type': 'application/json',
             }
@@ -53,7 +53,7 @@ const EditNotification: React.FC = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/Notifications/${notificationId}`)
+        fetch(process.env.REACT_APP_BACKEND_URL + `/Notifications/${notificationId}`)
             .then((res) => res.json())
             .then((data) => setNotificationData(data as Notification))
     }, [notificationId]);
@@ -78,7 +78,6 @@ const EditNotification: React.FC = () => {
             <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
                 <div style={{ height: 32, margin: 16, background: 'rgba(255, 255, 255, 0.2)' }} />
                 <Menu theme="dark" defaultSelectedKeys={['6']} mode="inline">
-                    <div style={{ height: 32, margin: 16, background: 'rgba(255, 255, 255, 0.2)' }} />
                     <Menu.Item key={"1"} icon={<DesktopOutlined />} onClick={() => navigate('/')}>POČETNA</Menu.Item>
                     <Menu.Item key={"2"} icon={<DesktopOutlined />} onClick={() => navigate('/Admin/Control-panel')}>ADMIN PANEL</Menu.Item>
                     <Menu.Item key={"3"} icon={<DiffOutlined />} onClick={() => navigate('/Admin/Control-panel/Activities/Add')}>NOVA AKTIVNOST</Menu.Item>

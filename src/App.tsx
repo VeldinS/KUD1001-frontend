@@ -1,29 +1,30 @@
-import React, {useCallback, useState} from 'react';
+import React, {Suspense, useCallback, useState} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {AuthContext} from "./authentication/authContext";
 import { Provider } from "react-redux";
 import store from "./store/store";
+import LoadingSpinner from "./components/UIElements/LoadingSpinner";
 
-import Home from "./components/HomePage/Home";
-import About from "./components/About/AboutPage/AboutUs";
-import Location from "./components/About/Location/Location";
-import Contact from "./components/About/Contact/Contact";
-import AllActivities from "./components/Activities/AllActivities/AllActivities";
-import Activity from "./components/Activities/SpecificActivity/Activity";
-import Register from "./components/BecomeMember/Register";
-import Redirect from "./components/BecomeMember/RedirectPage/Redirect";
-import Login from "./components/Admin/login/Login";
-import Control_panel from "./components/Admin/control-panel/ControlPanel";
-import AddActivity from "./components/Admin/activities-add/AddActivity";
-import Activities from "./components/Admin/activities-edit/Activities";
-import CheckMemberships from "./components/Admin/memberships/CheckMemeberships";
-import DeleteActivity from "./components/Admin/activities-edit/activity-delete/DeleteActivity";
-import EditActivity from "./components/Admin/activities-edit/activity-edit/EditActivity";
-import OpenActivity from "./components/Admin/activities-edit/activity-open/OpenActivity";
-import AllNotifications from "./components/Notifications/AllNotifications";
-import AddNotification from "./components/Admin/notifications-add/AddNotification";
-import Notifications from "./components/Admin/notifications-edit/Notifications";
-import EditNotification from "./components/Admin/notifications-edit/notification-edit/EditNotification";
+const Home = React.lazy(() => import('./components/HomePage/Home'));
+const About = React.lazy(() => import("./components/About/AboutPage/AboutUs"));
+const Location = React.lazy(() => import("./components/About/Location/Location"));
+const Contact = React.lazy(() => import("./components/About/Contact/Contact"));
+const AllActivities = React.lazy(() => import("./components/Activities/AllActivities/AllActivities"));
+const Activity = React.lazy(() => import("./components/Activities/SpecificActivity/Activity"));
+const Register =  React.lazy(() => import("./components/BecomeMember/Register"));
+const Redirect = React.lazy(() => import("./components/BecomeMember/RedirectPage/Redirect"));
+const Login = React.lazy(() => import("./components/Admin/login/Login"));
+const Control_panel = React.lazy(() => import("./components/Admin/control-panel/ControlPanel"));
+const AddActivity = React.lazy(() => import("./components/Admin/activities-add/AddActivity"));
+const Activities = React.lazy(() => import("./components/Admin/activities-edit/Activities"));
+const CheckMemberships = React.lazy(() => import("./components/Admin/memberships/CheckMemberships"));
+const DeleteActivity = React.lazy(() => import("./components/Admin/activities-edit/activity-delete/DeleteActivity"));
+const EditActivity = React.lazy(() => import("./components/Admin/activities-edit/activity-edit/EditActivity"));
+const OpenActivity = React.lazy(() => import("./components/Admin/activities-edit/activity-open/OpenActivity"));
+const AllNotifications = React.lazy(() => import("./components/Notifications/AllNotifications"));
+const AddNotification = React.lazy(() => import("./components/Admin/notifications-add/AddNotification"));
+const Notifications = React.lazy(() => import("./components/Admin/notifications-edit/Notifications"));
+const EditNotification = React.lazy(() => import("./components/Admin/notifications-edit/notification-edit/EditNotification"));
 
 function App() {
 
@@ -115,7 +116,13 @@ function App() {
                 logout: logout }}
         >
             <Router>
-                <main>{routes}</main>
+                <main>
+                    <Suspense fallback={
+                        <div className={"center"}>
+                            <LoadingSpinner asOverlay={undefined} />
+                        </div>}>{routes}
+                    </Suspense>
+                </main>
             </Router>
         </AuthContext.Provider>
     );

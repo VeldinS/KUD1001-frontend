@@ -26,7 +26,7 @@ const CheckMemberships: React.FC = () => {
         navigate('/Login');
     }, handleSubmit = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, activityId: string) => {
         event.preventDefault();
-        const response = await axios.delete(`http://localhost:5000/Admin/Control-panel/Membership/Delete/${activityId}`);
+        const response = await axios.delete(process.env.REACT_APP_BACKEND_URL + `/Admin/Control-panel/Membership/Delete/${activityId}`);
         const newData = registrationData.filter((member: { _id: string; }) => member._id !== activityId);
         dispatch(fetchRegistrations());
         alert('PRIJAVA USPJEŠNO ODOBRENA!');

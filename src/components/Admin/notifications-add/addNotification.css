@@ -9,6 +9,22 @@
     color: white;
 }
 
+.addNotification-form{
+    animation-name: enter-addNotification-form;
+    animation-duration: 1s;
+}
+
+@keyframes enter-addNotification-form{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .addNotification-form1{
     padding: 0 7rem 0 7rem;
     color: white;

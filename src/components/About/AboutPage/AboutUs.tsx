@@ -51,7 +51,7 @@ const About: React.FC = () => {
             <Layout className="site-layout">
                 <Content style={{ margin: '0 0' }}>
                     <div className={"about-page-main"} style={{ minHeight: '100vh', backgroundImage:  `linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(${image1})`, backgroundSize: "cover",height: 'max-content'}}>
-                        <h1 className={"text-center about-page-heading1"}>ABOUT</h1>
+                        <h1 className={"text-center about-page-heading1"}>O NAMA</h1>
                         <br/>
                         <p className={"aboutUs-p"} >erat dolor in nulla.pretium eget mi.pretium eget mi. Donec accumsan, magna et consectetur ullamcorper, orci lorem
                             porttitor magna, sed consectetur erat dolor in nulla.pretium eget mi. magna et consectetur ullamcorper, orci lorem

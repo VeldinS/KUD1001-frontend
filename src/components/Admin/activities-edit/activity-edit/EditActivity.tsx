@@ -52,7 +52,7 @@ const EditActivity: React.FC = () => {
             date: activityData.date,
             text: activityData.text,
         }
-        const response = await axios.patch(`http://localhost:5000/Admin/Control-panel/Activities/Edit/${activityId}`, newActivity, {
+        const response = await axios.patch(process.env.REACT_APP_BACKEND_URL + `/Admin/Control-panel/Activities/Edit/${activityId}`, newActivity, {
             headers: {
                 'Content-Type': 'application/json',
             }
@@ -62,7 +62,7 @@ const EditActivity: React.FC = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/Activities/${activityId}`)
+        fetch( process.env.REACT_APP_BACKEND_URL + `/Activities/${activityId}`)
             .then((res) => res.json())
             .then((data) => setActivityData(data as Activity))
     }, [activityId]);

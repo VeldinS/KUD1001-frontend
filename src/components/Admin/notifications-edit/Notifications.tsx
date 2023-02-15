@@ -27,7 +27,7 @@ const Notifications: React.FC = () => {
         }, dispatch = useDispatch(), notificationData = useSelector((state: any) => state.loadData),
         handleSubmit = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, notificationId: string) => {
             event.preventDefault();
-            const response = await axios.delete(`http://localhost:5000/Admin/Control-panel/Notifications/Delete/${notificationId}`);
+            const response = await axios.delete(process.env.REACT_APP_BACKEND_URL + `/Admin/Control-panel/Notifications/Delete/${notificationId}`);
             const newData = notificationData.filter((notification: { _id: string; }) => notification._id !== notificationId);
             dispatch(fetchNotifications());
             alert('OBAVIJEST USPJEŠNO OBRISANA!');

@@ -9,6 +9,38 @@
     margin-top: 20px;
 }
 
+.home-page-heading1 {
+    animation-name: enter;
+    animation-duration: 1s;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-page-quote {
+    animation-name: enter-quote;
+    animation-duration: 1s;
+}
+
+@keyframes enter-quote {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .home-page-main{
     color: white;
     height: 100vh;

@@ -16,7 +16,22 @@
     margin: 0;
     padding-bottom: 2rem;
     text-shadow: 2px 2px 4px #000000;
+}
 
+.about-page-heading1 {
+    animation-name: enter-about-page-heading1;
+    animation-duration: 1s;
+}
+
+@keyframes enter-about-page-heading1 {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-page-heading4 {
@@ -30,6 +45,21 @@
     flex-direction: column;
 }
 
+.aboutUs-p {
+    animation-name: enter-aboutUs-p;
+    animation-duration: 1s;
+}
+
+@keyframes enter-aboutUs-p {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 @media (max-width: 576px) {
 

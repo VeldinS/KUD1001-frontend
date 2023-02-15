@@ -34,7 +34,7 @@ const OpenActivity: React.FC = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/Activities/${activityId}`)
+        fetch(process.env.REACT_APP_BACKEND_URL + `/Activities/${activityId}`)
             .then((res) => res.json())
             .then((data) => setActivityData(data as Activity))
     }, [activityId]);
@@ -85,7 +85,7 @@ const OpenActivity: React.FC = () => {
                                         <div className={"col-1"}></div>
                                         <div className={"col-5 openActivity-box2"}>
                                             <div>
-                                                <img className={"img-fluid img-thumbnail"} src={image1} alt={''}/>
+                                                <img className={"img-fluid"} src={image1} alt={''}/>
                                                 {/*switch src={dummy} with src={activityData.image1}*/}
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ const OpenActivity: React.FC = () => {
                                     <div className={"row openActivity-row2"}>
                                         <div className={"col-5 openActivity-box3"}>
                                             <div>
-                                                <img className={"img-fluid img-thumbnail"} src={image1} alt={''}/>
+                                                <img className={"img-fluid"} src={image1} alt={''}/>
                                                 {/*switch src={dummy} with src={activityData.image2}*/}
                                             </div>
                                         </div>
